@@ -1,0 +1,29 @@
+<div class="banner">
+    <div class="container">
+        <div class="header">
+            <h2>Crypto Coin Rates</h2>
+            <h6>get the latest rates of the crypto market</h6>
+        </div>
+        <div class="sub-header">
+            <marquee behavior="scroll" direction="right" onmouseover="stop()" onmouseout="start()" loop="infinite">
+                <div class="row">
+                    <ng-container *ngFor="let row of bannerData">
+                        <div class="col-1">
+                            <div class="class">
+                                <img [src]="row.image" width="100" class="img-fluid" alt="img of a coin">
+                                <div class="card-body">
+                                        <h5 class="card-title">{{ row.symbol | uppercase }} <span class="text-danger">{{ row.market_cap_change_percentage_24th }}%</span></h5>
+                                        <p class="card-text">{{ row.current_price | currency: " LKR" }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </marquee>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-3">
+    
+</div>
