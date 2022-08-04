@@ -35,6 +35,22 @@
     align-items: center;
 }
 
-.card-body {
+.card {
     color: #fff;
+    border: 0;
+    background: transparent;
+    padding: 10px;
+    margin: 40px;
+    width: 100px;
+    height: 200px;
+    img {
+        width: 70px;
+        margin: 0, auto;
+    }
+    h5 {
+        font-weight: 500;
+    }
+    p {
+        font-weight: 700;
+    }
 }
