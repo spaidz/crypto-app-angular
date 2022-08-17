@@ -1,3 +1,4 @@
+
 .details {
     width: 30%;
     display: flex;
@@ -62,4 +63,9 @@
 
 * {
     color: #fff;
+}
+
+.container-fluid {
+    background-color: cyan;
+    height:100vh;
 }
